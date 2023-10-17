@@ -1,0 +1,33 @@
+body{
+	background-color: rgb(40, 90, 119)
+	
+}
+
+h1 {
+	text-align: center;
+}
+
+main {
+	width: 25rem;
+	height: 25em;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	color: rgb(40, 90, 119);
+	
+}
+
+main div {
+	width: calc((100% / 3) - 1px);
+	height: calc((100% / 3) - 1px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 3rem;
+	background: gainsboro;
+}
