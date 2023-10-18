@@ -1,31 +1,28 @@
 
-const grid = document.getElementsByClassName('cases'); // récupérer les div 
+const grid = document.getElementsByClassName('cases'); // Get cases from html 
 
-let currentPlayer = true;
+let currentPlayer = true; // set current player 
 
-let victory = false;
+let victory = false; // set victory status
 
 for (let i = 0; i < grid.length; i++) {
-	grid[i].addEventListener('click', () => {
+	grid[i].addEventListener('click', () => {  // add event on click
 
-		if (grid[i].textContent == '') {
+		if (grid[i].textContent == '') {  // can play if case is empty
 
-			if (currentPlayer == true) {
-				grid[i].textContent = 'X';
-				currentPlayer = false;
+			if (currentPlayer == true) {  // set first player
+				grid[i].textContent = 'X'; // first player is X
+				currentPlayer = false; // switch turn on second player
 
 			} else {
-
-				grid[i].textContent = 'O';
-				currentPlayer = true;
+				grid[i].textContent = 'O';  // set second player on O
+				currentPlayer = true; // switch to first player
 			}
 
 		}
-		check()
+		check()  // use function to verify victory 
 	});
 }
-
-console.log(grid);
 
 function check() {
 
@@ -44,6 +41,7 @@ function check() {
 				grid[0].textContent == 'X' && grid[4].textContent == 'X' && grid[8].textContent == 'X' ||
 				grid[2].textContent == 'X' && grid[4].textContent == 'X' && grid[6].textContent == 'X') {
 
+				// grid[i].style.backgroundcolor = '#40bb54';
 				victory = true;
 				console.log(victory)
 				alert('Player 1 you win')
@@ -77,21 +75,8 @@ function check() {
 
 console.log(victory);
 
-// else if ()
 
-// victory = 'X'
-// victory = 'O'
-// victory = 'Try again'
-
-// victory = false
-
-// if (grid[0 ; 1 ; 2] = 'X') {
-
-// 	victory = true
-
-// }
-
-
+// 						Victory's setup
 // if 0, 1, 2 = victory
 // if 3, 4, 5 = victory
 // if 6, 7, 8 = victory
@@ -103,6 +88,3 @@ console.log(victory);
 
 // if 0, 4, 8 = victory
 // if 2, 4, 6 = victory
-
-//if
-

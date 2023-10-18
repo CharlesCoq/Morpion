@@ -12,6 +12,7 @@ h1 {
 	display: flex;
 	justify-content: center;
 	text-align: center;
+	margin: 0.3em;
 	font-size: 5.5em;
 	color: rgb(204, 226, 240);
 	text-decoration: underline;
@@ -20,7 +21,7 @@ h1 {
 main {
 	width: 25rem;
 	height: 25em;
-	position: absolute;
+	position: relative;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
@@ -29,7 +30,6 @@ main {
 	justify-content: space-around;
 	align-items: center;
 	color: rgb(40, 90, 119);
-
 }
 
 main div {
@@ -40,4 +40,7 @@ main div {
 	align-items: center;
 	font-size: 3rem;
 	background: gainsboro;
+	/* color: #40bb54; */
+	border-radius: 3px;
 }
+
