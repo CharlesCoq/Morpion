@@ -24,7 +24,7 @@ for (let i = 0; i < grid.length; i++) {
 	});
 }
 
-function check() {
+function check() { 			//function to verify victory 
 
 	for (let i = 0; i < grid.length; i++) {
 
@@ -41,7 +41,6 @@ function check() {
 				grid[0].textContent == 'X' && grid[4].textContent == 'X' && grid[8].textContent == 'X' ||
 				grid[2].textContent == 'X' && grid[4].textContent == 'X' && grid[6].textContent == 'X') {
 
-				// grid[i].style.backgroundcolor = '#40bb54';
 				victory = true;
 				console.log(victory)
 				alert('Player 1 you win')
